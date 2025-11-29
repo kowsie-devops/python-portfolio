@@ -1,0 +1,139 @@
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.hero {
+    background: url("bg.jpg") no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(2px);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #00eaff;
+}
+
+/* HERO TEXT */
+.hero-content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.highlight {
+    color: #00eaff;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+    background: #00eaff;
+    padding: 12px 25px;
+    font-size: 20px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 60px;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+.section.dark {
+    background: #111;
+    color: white;
+}
+
+.skills-box {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills-box span {
+    background: #00eaff;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 6px;
+}
+
+/* PROJECTS */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #00eaff;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
