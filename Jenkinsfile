@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB = "kowsie/python-portfolio"
-        EC2_IP = "3.109.56.77"
+        EC2_IP = "65.0.177.210"
     }
 
     stages {
